@@ -21,7 +21,7 @@ for filepath in filepaths:
     with open(filepath, "r") as file:
         pdf.set_font(family="Arial", size=10)
         read = file.readline()
-        pdf.multi_cell(w=190, h=10, txt=read)
+        pdf.multi_cell(w=0, h=10, txt=read)
         file.close()
 
 pdf.output("output.pdf")
